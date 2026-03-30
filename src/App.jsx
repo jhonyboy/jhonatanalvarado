@@ -173,9 +173,9 @@ function App() {
                 </h3>
 
                 <p className="text-gray-300 text-xs">
-                  Desarrollo de sistema web para control de empleados, almacenamiento de cursos y control de cursos impartidos por el departamento de RH y vitacora de los mismos.
+                  Desarrollo de sistema web para la empresa TIJ Solutions dedicada a la manufactura, donde en el sistema se realiza el control de empleados, almacenamiento de cursos y control de cursos impartidos por el departamento de RH y vitacora de los mismos. Asi como otros modulos.
                 </p>
-
+                <p className='text-gray-300 text-xs' >Sistema desarrollado con PHP y JS</p>
               </div>
             </a>
 
