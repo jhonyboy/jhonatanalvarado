@@ -28,7 +28,6 @@ const Footer = () => {
         </span>
       </a>
 
-      {/* Gmail */}
       <a 
         href="mailto:alvaradogodinez@gmail.com"
         className="flex flex-col items-center gap-2 hover:scale-105 transition"
@@ -41,9 +40,10 @@ const Footer = () => {
         </span>
       </a>
 
-      {/* LinkedIn */}
       <a 
-        href="#"
+        href="https://www.linkedin.com/in/jhonatan-alvarado-godinez-351a9318a"
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex flex-col items-center gap-2 hover:scale-105 transition"
       >
         <div className="p-4 rounded-full bg-base-100 shadow-md">
@@ -54,7 +54,6 @@ const Footer = () => {
         </span>
       </a>
 
-      {/* GitHub */}
       <a 
         href="https://github.com/jhonyboy"
         target="_blank"
