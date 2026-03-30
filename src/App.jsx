@@ -3,6 +3,7 @@ import './App.css';
 import computadora from '../src/assets/estacion_trabajo.jpg';
 import gmail from '../src/assets/gmail.png';
 import Footer from './Footer';
+import cddtij from '../src/assets/cddtij.png';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -130,7 +131,7 @@ function App() {
           </h2>
         </div>
 
-        
+
         <div className="mb-10 border-l-4 border-accent pl-6">
           <h3 className="text-xl font-semibold">Instituto Tecnologico de Tijuana</h3>
           <p className="text-sm opacity-70 mb-2">
@@ -140,8 +141,48 @@ function App() {
             Carrera: Ingenieria en sistemas computacionales
           </p>
         </div>
-        
+
       </div>
+
+      <section id="trabajos" className="flex items-center justify-center py-16 ">
+        <div className="max-w-4xl w-full px-4">
+
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+            Trabajos Independientes
+          </h2>
+
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 justify-items-center">
+
+            <a
+              href="http://cddtij.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative "
+            >
+
+              <img
+                src={cddtij}
+                alt="Proyecto CDTIJ"
+                className="h-60 w-auto mx-auto object-contain transition duration-500 group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition duration-300 px-4">
+
+                <h3 className="text-white text-lg font-semibold mb-1">
+                  Plataforma CDTIJ
+                </h3>
+
+                <p className="text-gray-300 text-xs">
+                  Desarrollo de sistema web para control de empleados, almacenamiento de cursos y control de cursos impartidos por el departamento de RH y vitacora de los mismos.
+                </p>
+
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
 
       <Footer />
 
