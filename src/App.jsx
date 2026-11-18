@@ -1,194 +1,41 @@
-import { useState } from 'react';
-import './App.css';
-import computadora from '../src/assets/estacion_trabajo.jpg';
-import gmail from '../src/assets/gmail.png';
-import Footer from './Footer';
-import cddtij from '../src/assets/cddtij.png';
+import About from './components/About';
+import Contact from './components/Contact';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import { useLanguage } from './i18n/useLanguage';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { t } = useLanguage();
 
   return (
     <>
+      <a
+        href="#contenido"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-primary-content"
+      >
+        {t.a11y.skip}
+      </a>
 
-      <div className="relative inline-block">
-        <img src={computadora} alt="computadora" />
+      <Navbar />
 
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold text-center text-6xl">
-          Desarrollador FullStack
-        </h1>
-      </div>
-
-      <div style={{ marginTop: '50px' }}>
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Acerca de mi
-        </h2>
-
-        <div className="flex justify-center gap-6 mt-10 flex-wrap">
-          <div className="card w-96 bg-base-100 card-xs shadow-sm">
-            <div className="card-body">
-              <h1 className="card-title">Perfil</h1>
-              <p className='mb-10 text-xl' >Profesional de Ingenieria en sistemas , desarrollo de sistemas , desarrollo web, desarrollador frontend, desarrollador backend. Con mas de 5 años de experiencia en el desarrollo de software en el sector de seguros. </p>
-            </div>
-          </div>
-
-          <div className="card w-96 bg-base-100 card-xs shadow-sm">
-            <div className="card-body">
-              <h1 className="card-title">Habilidades</h1>
-              <p className='mb-10 text-xl' >Capacidad para obtener requerimientos de un sistema de informacion e implementar los requerimientois para su soluci&oacute;n</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto p-6 max-w-4xl">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          💼 Experiencia Laboral
-        </h2>
-
-        <div className="mb-10 border-l-4 border-primary pl-6">
-          <h3 className="text-xl font-semibold">Dynamick Network</h3>
-          <p className="text-sm opacity-70 mb-2">
-            Desarrollador de Software | 2018 - 2023
-          </p>
-
-          <p className="mb-4">
-            Compañia dedicada a la venta de seguros para autos,casa,seguros medicos, etc.
-          </p>
-          <p className="mb-4">
-            Mis funcionaes principales eran desarrollo de software y mantenimiento a modulos existentes, asi desarrollando modulos para el sistema de ventas utilizadas en las tiendas Suburbia/Liverpool.
-          </p>
-
-          <div>
-            <h4 className="font-semibold mb-2">Tecnologías</h4>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge badge-primary">Java</span>
-              <span className="badge badge-secondary">HTML/CSS</span>
-              <span className="badge badge-accent">MySQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="divider"></div>
-
-        <div className="mb-10 border-l-4 border-primary pl-6">
-          <h3 className="text-xl font-semibold">Protec</h3>
-          <p className="text-sm opacity-70 mb-2">
-            Desarrollador de Software | 2023 - 2025
-          </p>
-
-          <p className="mb-4">
-            Ingeniero Desarrollo de software
-          </p>
-          <p className="mb-4">
-            Compania dedicada a la venta de seguros para autos,casa,seguros medicos, etc.
-          </p>
-          <p className="mb-4">
-            Mis funcionaes principales eran desarrollo de software y mantenimiento a modulos existentes, asi desarrollando modulos para el sistema de ventas de polizas.
-          </p>
-
-          <div>
-            <h4 className="font-semibold mb-2">Tecnologías</h4>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge badge-primary">JS</span>
-              <span className="badge badge-secondary">NodeJS</span>
-              <span className="badge badge-accent">SQL Server</span>
-              <span className="badge badge-warning">PHP</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="divider"></div>
-
-        <div className="mb-10 border-l-4 border-primary pl-6">
-          <h3 className="text-xl font-semibold">Grupo ECO</h3>
-          <p className="text-sm opacity-70 mb-2">
-            Desarrollador de Software | 2025 - 2026
-          </p>
-
-          <p className="mb-4">
-            Desarrollo de aplicaciones web para distintos giros del grupo y mantenimiento de sistemas.
-          </p>
-
-          <div>
-            <h4 className="font-semibold mb-2">Tecnologías</h4>
-            <div className="flex flex-wrap gap-2">
-              <span className="badge badge-primary">JavaScript</span>
-              <span className="badge badge-secondary">SQL Server</span>
-              <span className="badge badge-accent">ReactJS</span>
-              <span className="badge badge-warning">C#</span>
-            </div>
-          </div>
-        </div>
-
-
-        <div className='container mx-auto p-6 max-w-4xl'>
-          <h2 className="text-3xl font-bold text-center mb-10">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <img src='https://img.icons8.com/papercut/60/university.png' alt="university" />
-              <p style={{ marginLeft: '10px' }}>Estudios</p>
-            </div>
-          </h2>
-        </div>
-
-
-        <div className="mb-10 border-l-4 border-accent pl-6">
-          <h3 className="text-xl font-semibold">Instituto Tecnologico de Tijuana</h3>
-          <p className="text-sm opacity-70 mb-2">
-            Periodo de estudios 2013 - 2018
-          </p>
-          <p className="mb-4">
-            Carrera: Ingenieria en sistemas computacionales
-          </p>
-        </div>
-
-      </div>
-
-      <section id="trabajos" className="flex items-center justify-center py-16 ">
-        <div className="max-w-4xl w-full px-4">
-
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            Trabajos Independientes
-          </h2>
-
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 justify-items-center">
-
-            <a
-              href="http://cddtij.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative "
-            >
-
-              <img
-                src={cddtij}
-                alt="Proyecto CDTIJ"
-                className="h-60 w-auto mx-auto object-contain transition duration-500 group-hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-black/70 flex flex-col justify-center items-center text-center opacity-0 group-hover:opacity-100 transition duration-300 px-4">
-
-                <h3 className="text-white text-lg font-semibold mb-1">
-                  Plataforma CDTIJ
-                </h3>
-
-                <p className="text-gray-300 text-xs">
-                  Desarrollo de sistema web para la empresa TIJ Solutions dedicada a la manufactura, donde en el sistema se realiza el control de empleados, almacenamiento de cursos y control de cursos impartidos por el departamento de RH y vitacora de los mismos. Asi como otros modulos.
-                </p>
-                <p className='text-gray-300 text-xs' >Sistema desarrollado con PHP y JS</p>
-              </div>
-            </a>
-
-          </div>
-
-        </div>
-      </section>
+      <main id="contenido" className="scroll-mt-24">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <Contact />
+      </main>
 
       <Footer />
-
     </>
   );
 }
 
 export default App;
-

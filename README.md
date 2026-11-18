@@ -1,19 +1,54 @@
-# React + Vite
+# Portafolio de Jhonatan Alvarado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio personal de presentación profesional como **Ingeniero de Software Full Stack**. Incluye experiencia, habilidades, proyectos, formación y medios de contacto, en español e inglés.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [React 19](https://react.dev/)
+- [Vite 8](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/) (configuración en CSS)
+- [daisyUI 5](https://daisyui.com/) con temas personalizados
+- [gh-pages](https://github.com/tschaub/gh-pages) para despliegue
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Selector de idioma **ES / EN** con traducción completa del sitio y persistencia en `localStorage`.
+- Cambio de **tema claro / oscuro** con detección de la preferencia del sistema, persistencia y sin parpadeo al cargar.
+- Diseño **responsive** (móvil, tablet y escritorio) con menú móvil accesible.
+- Secciones: inicio, sobre mí, habilidades, experiencia, educación, proyectos y contacto.
+- CV descargable en PDF para cada idioma (`public/cv/`).
+- Metadatos SEO, Open Graph y datos estructurados `Person`.
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# jhonatanalvarado
-acerca de mi
+```bash
+npm install      # instalar dependencias
+npm run dev      # servidor de desarrollo
+npm run build    # build de producción en dist/
+npm run preview  # previsualizar el build
+npm run lint     # revisar el código con ESLint
+npm run deploy   # publicar en GitHub Pages
+```
+
+## Estructura
+
+```
+src/
+├── components/       # secciones y componentes de UI
+├── data/profile.js   # datos compartidos (contacto, empleos, proyectos)
+├── hooks/            # tema y sección activa
+├── i18n/             # diccionarios ES/EN y contexto de idioma
+├── assets/           # imágenes
+├── App.jsx
+└── index.css         # Tailwind, temas de daisyUI y estilos base
+```
+
+## Despliegue
+
+El sitio se publica en GitHub Pages bajo la ruta del repositorio. `vite.config.js` define:
+
+```js
+base: '/jhonatanalvarado/'
+```
+
+Si se usa un dominio propio, cambia `base` a `'/'` y actualiza las URLs absolutas de `index.html` (`og:url`, `og:image`) y del JSON-LD.
