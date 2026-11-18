@@ -91,7 +91,7 @@ export const en = {
   experience: {
     eyebrow: 'Career',
     title: 'Professional experience',
-    subtitle: 'More than seven years developing and maintaining corporate applications.',
+    subtitle: 'Eight years developing and maintaining corporate applications.',
     jobs: {
       octane: {
         role: 'Programmer Analyst',
@@ -157,8 +157,10 @@ export const en = {
     },
   },
   education: {
-    eyebrow: 'Education',
+    eyebrow: 'Background',
     title: 'Education',
+    subtitle:
+      'Academic foundation in software engineering, databases and information systems.',
     degree: 'Computer Systems Engineering',
     type: "Bachelor's degree",
     description:

@@ -91,7 +91,7 @@ export const es = {
   experience: {
     eyebrow: 'Trayectoria',
     title: 'Experiencia profesional',
-    subtitle: 'Más de siete años desarrollando y manteniendo aplicaciones corporativas.',
+    subtitle: 'Ocho años desarrollando y manteniendo aplicaciones corporativas.',
     jobs: {
       octane: {
         role: 'Programador Analista',
@@ -159,6 +159,8 @@ export const es = {
   education: {
     eyebrow: 'Formación',
     title: 'Educación',
+    subtitle:
+      'Base académica en ingeniería de software, bases de datos y sistemas de información.',
     degree: 'Ingeniería en Sistemas Computacionales',
     type: 'Licenciatura',
     description:

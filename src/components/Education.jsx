@@ -14,7 +14,11 @@ export default function Education() {
       className="border-y border-base-300/60 bg-base-200/40 py-14 sm:py-16"
     >
       <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-        <SectionHeading eyebrow={education.eyebrow} title={education.title} />
+        <SectionHeading
+          eyebrow={education.eyebrow}
+          title={education.title}
+          subtitle={education.subtitle}
+        />
 
         <Reveal
           delay={100}

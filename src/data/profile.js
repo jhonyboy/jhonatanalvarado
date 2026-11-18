@@ -96,7 +96,7 @@ export const PROJECTS = [
   {
     id: 'cddtij',
     year: '2026',
-    url: 'http://cddtij.com/',
+    url: 'https://cddtij.com/',
     mark: 'CD',
     domain: 'cddtij.com',
     tone: 'neutral',
