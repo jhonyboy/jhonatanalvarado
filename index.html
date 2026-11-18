@@ -1,15 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/jhonatanalvarado/developer.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Jhonatan Alvarado</title>
-    <script type="module" crossorigin src="/jhonatanalvarado/assets/index-DQ3om1FM.js"></script>
-    <link rel="stylesheet" crossorigin href="/jhonatanalvarado/assets/index-BT111PMM.css">
+    <link rel="icon" type="image/png" href="/jhonatanalvarado/developer.png" />
+    <link rel="apple-touch-icon" href="/jhonatanalvarado/developer.png" />
+
+    <title>Jhonatan Alvarado | Ingeniero de Software Full Stack</title>
+    <meta
+      name="description"
+      content="Portafolio de Jhonatan Alvarado Godinez, Ingeniero de Software Full Stack en Tijuana, B.C. Especializado en NestJS, React, Java y APIs REST."
+    />
+    <meta name="author" content="Jhonatan Alvarado Godinez" />
+    <meta name="theme-color" content="#0b1120" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jhonyboy.github.io/jhonatanalvarado/" />
+    <meta property="og:title" content="Jhonatan Alvarado | Ingeniero de Software Full Stack" />
+    <meta
+      property="og:description"
+      content="Portafolio de Jhonatan Alvarado Godinez, Ingeniero de Software Full Stack en Tijuana, B.C. Especializado en NestJS, React, Java y APIs REST."
+    />
+    <meta property="og:image" content="https://jhonyboy.github.io/jhonatanalvarado/developer.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jhonatan Alvarado | Ingeniero de Software Full Stack" />
+    <meta
+      name="twitter:description"
+      content="Ingeniero de Software Full Stack en Tijuana, B.C. NestJS, React, Java y APIs REST."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // Evita el parpadeo de tema incorrecto antes de que React hidrate.
+      (function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme');
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = dark ? 'portfolio-dark' : 'portfolio-light';
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+          document
+            .querySelector('meta[name="theme-color"]')
+            ?.setAttribute('content', dark ? '#0b1120' : '#ffffff');
+        } catch (error) {
+          document.documentElement.dataset.theme = 'portfolio-light';
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jhonatan Alvarado Godinez",
+        "jobTitle": "Ingeniero de Software Full Stack",
+        "email": "mailto:alvaradogodinez@gmail.com",
+        "telephone": "+52 663 108 3003",
+        "url": "https://jhonyboy.github.io/jhonatanalvarado/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tijuana",
+          "addressRegion": "Baja California",
+          "addressCountry": "MX"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/jhonatan-alvarado-godinez-351a9318a/",
+          "https://github.com/jhonyboy"
+        ],
+        "knowsAbout": [
+          "NestJS",
+          "React",
+          "Java",
+          "TypeScript",
+          "Node.js",
+          "Spring Boot",
+          "REST APIs",
+          "SQL Server",
+          "MariaDB"
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/jhonatanalvarado/assets/index-CPgjMf5u.js"></script>
+    <link rel="stylesheet" crossorigin href="/jhonatanalvarado/assets/index-DNf_K7hZ.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
